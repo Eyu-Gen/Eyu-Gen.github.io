@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(28, 28, 28);
+  color: white;
+}
+
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li:hover {
+  background-color: grey;
+}
+
+.brand-title {
+  margin: 0.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.navbar li {
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shortcuts {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1rem;
+}
