@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -31,13 +32,11 @@ body {
 
 .brand-title {
   margin: 0.5rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #ffffff;
 }
 
 .navbar li {
   list-style: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .shortcuts {
@@ -73,6 +72,7 @@ body {
   background-position: center;
   opacity: 90%;
   position: relative;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
 .details1 {
@@ -97,6 +97,110 @@ body {
   font-size: 2rem;
   color: black;
   text-shadow: 5px 5px 10px white;
+}
+
+#education {
+  height: 100vh;
+
+  background-color: rgb(230, 229, 229);
+  padding-top: 40px;
+}
+
+.title {
+  text-align: center;
+  color: #373737;
+  text-transform: uppercase;
+}
+
+.level {
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  padding: 100px;
+  /* border: 1px solid red; */
+}
+
+.blocks {
+  width: 40%;
+}
+
+.grade,
+.institute {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.explaination {
+  font-size: 15px;
+  font-weight: bold;
+  color: #373737d4;
+}
+
+#skills {
+  padding-top: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 80%;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.percentage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: max-content;
+}
+
+.back {
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgb(199, 199, 199);
+}
+
+.front1 {
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4196fd;
+}
+.front2 {
+  width: 60%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4196fd;
+}
+.front3 {
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4196fd;
+}
+.front4 {
+  width: 90%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4196fd;
+}
+.front5 {
+  width: 95%;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4196fd;
 }
 
 @media (max-width: 600px) {
@@ -136,6 +240,20 @@ body {
     top: 45%;
     left: 27%;
   }
+
+  #education {
+    height: fit-content;
+  }
+
+  .level {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+  }
+
+  .blocks {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) and (min-width: 600px) {
@@ -144,5 +262,19 @@ body {
     top: 25%;
     left: 20%;
     transform: translate(50%, 50%);
+  }
+
+  #education {
+    height: fit-content;
+  }
+
+  .level {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+  }
+
+  .blocks {
+    width: 100%;
   }
 }
