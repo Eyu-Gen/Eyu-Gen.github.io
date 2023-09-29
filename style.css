@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -31,6 +32,7 @@ body {
 }
 
 .brand-title {
+  padding-left: 20px;
   margin: 0.5rem;
   color: #ffffff;
 }
@@ -66,7 +68,7 @@ body {
 
 #home {
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   background-image: url(bg.jpg);
   background-size: cover;
   background-position: center;
@@ -100,9 +102,8 @@ body {
 }
 
 #education {
-  height: 100vh;
-
-  background-color: rgb(230, 229, 229);
+  height: max-content;
+  background-color: #ffffff;
   padding-top: 40px;
 }
 
@@ -117,7 +118,6 @@ body {
   justify-content: space-around;
   font-size: 15px;
   padding: 100px;
-  /* border: 1px solid red; */
 }
 
 .blocks {
@@ -135,12 +135,12 @@ body {
 .explaination {
   font-size: 15px;
   font-weight: bold;
-  color: #373737d4;
+  color: #000000d4;
 }
 
 #skills {
   padding-top: 40px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,6 +203,56 @@ body {
   background-color: #4196fd;
 }
 
+#profile {
+  height: max-content;
+  padding-top: 40px;
+  background-color: #ffffff;
+  /* border: 1px solid blue; */
+}
+
+.container1 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  /* border: 1px solid red; */
+  height: 70%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  row-gap: 70px;
+}
+
+.pp {
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px 0px;
+}
+
+.pp:hover{
+  background-color:#4196fd;
+  box-shadow: 5px 5px 10px black;
+  transition: 0.3s ease-in;
+  opacity: 90%;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.image{
+  max-width: 70px;
+  border-radius: 50%;
+}
+
+
 @media (max-width: 600px) {
   .toggle-button {
     display: flex;
@@ -235,10 +285,14 @@ body {
     display: flex;
   }
 
+  #home {
+    height: 90vh;
+  }
+
   .details1 {
     font-size: 3rem;
     top: 45%;
-    left: 27%;
+    left: 15%;
   }
 
   #education {
@@ -254,13 +308,40 @@ body {
   .blocks {
     width: 100%;
   }
+
+  .container1 {
+    grid-template-columns: auto auto;
+    row-gap: 40px;
+  }
+
+  .pp {
+    width: 130px;
+    height: 100px;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .image{
+    max-width: 40px;
+    border-radius: 50%;
+  }
+  
 }
 
-@media (max-width: 800px) and (min-width: 600px) {
+@media (max-width: 821px) and (min-width: 600px) {
+  #home {
+    height: 90vh;
+  }
+
   .details1 {
     font-size: 3rem;
     top: 25%;
-    left: 20%;
+    left: 16%;
     transform: translate(50%, 50%);
   }
 
@@ -276,5 +357,10 @@ body {
 
   .blocks {
     width: 100%;
+  }
+
+  .container1 {
+    grid-template-columns: auto auto;
+    row-gap: 40px;
   }
 }
