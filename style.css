@@ -11,6 +11,8 @@ body {
   scroll-behavior: smooth;
 }
 
+/* .............NAV BAR................ */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -66,6 +68,8 @@ body {
   border-radius: 10px;
 }
 
+/* ....................HOME..................... */
+
 #home {
   width: 100%;
   height: 95vh;
@@ -100,6 +104,8 @@ body {
   color: black;
   text-shadow: 5px 5px 10px white;
 }
+
+/* ..........................EDUCATION.......................... */
 
 #education {
   height: max-content;
@@ -138,9 +144,11 @@ body {
   color: #000000d4;
 }
 
+/* ..........................SKILLS................................ */
+
 #skills {
   padding-top: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color:#dfdfdfc0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -203,17 +211,17 @@ body {
   background-color: #4196fd;
 }
 
+/* .........................PROFILE........................ */
+
 #profile {
   height: max-content;
   padding-top: 40px;
   background-color: #ffffff;
-  /* border: 1px solid blue; */
 }
 
 .container1 {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  /* border: 1px solid red; */
+  padding-bottom: 40px;
+  padding-top: 40px;
   height: 70%;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -224,7 +232,6 @@ body {
 .pp {
   width: 300px;
   height: 200px;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,8 +259,84 @@ a{
   border-radius: 50%;
 }
 
+/* ...............................CONTACT...................................... */
+
+#contact{
+  padding-top: 40px;
+  height: 90vh;
+  background-color: #dfdfdfc0;
+}
+.container2{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 90%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  height:60% ;
+}
+
+.name{
+  width: 90%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size:medium;
+  padding-left:10px;
+}
+
+textarea{
+  width: 90%;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: medium;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.submit{
+  width: 90%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #4196fd;
+}
+
+.data{
+  width: 20%;
+  height: 60%;
+  text-align: end;
+}
+
+.footer{
+  height: 100px;
+  background-color:#4196fd;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+span{
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+
+/* .......................MOBILE................................. */
 
 @media (max-width: 600px) {
+
+  /* .................NAV BAR................... */
   .toggle-button {
     display: flex;
   }
@@ -285,6 +368,8 @@ a{
     display: flex;
   }
 
+/* ................HOME.................. */
+
   #home {
     height: 90vh;
   }
@@ -294,6 +379,8 @@ a{
     top: 45%;
     left: 15%;
   }
+
+  /* ..................EDUCATION................... */
 
   #education {
     height: fit-content;
@@ -330,10 +417,32 @@ a{
     max-width: 40px;
     border-radius: 50%;
   }
-  
+
+  .container2{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  .form{
+    width: 100%;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .data{
+    width: 90%;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
+/* ..................TABLET..................... */
+
 @media (max-width: 821px) and (min-width: 600px) {
+  /* ................HOME.................. */
   #home {
     height: 90vh;
   }
@@ -344,6 +453,8 @@ a{
     left: 16%;
     transform: translate(50%, 50%);
   }
+  
+  /*.............EDUCATION..................... */
 
   #education {
     height: fit-content;
@@ -362,5 +473,29 @@ a{
   .container1 {
     grid-template-columns: auto auto;
     row-gap: 40px;
+  }
+
+  #contact{
+    height: fit-content;
+  }
+
+  .container2{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+  }
+
+  .form{
+    width: 100%;
+    height: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .data{
+    width: 90%;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
