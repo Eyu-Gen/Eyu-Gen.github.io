@@ -418,6 +418,10 @@ span{
     border-radius: 50%;
   }
 
+  #contact{
+    height: fit-content;
+  }
+
   .container2{
     flex-direction: column;
     justify-content: space-between;
